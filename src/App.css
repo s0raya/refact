@@ -5,17 +5,28 @@
   text-align: center;
 }
 
+.header {
+  background-color: grey;
+  margin-bottom: 2%;
+  height: 6em;
+  padding: 1.5em;
+}
+
 .envoltura {
-  display: inline;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
 }
 
 .envoltura > div {
   display: inline-block;
+  border: 1px solid white;
+  padding: 0px 10px
 }
 
 .logo {
   height: 6em;
-  padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
@@ -24,6 +35,14 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.pie {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: grey;
+  margin-top: 2%;
 }
 
 @keyframes logo-spin {
